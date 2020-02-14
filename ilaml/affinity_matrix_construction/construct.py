@@ -1,5 +1,5 @@
 import numpy as np
-from goggles.affinity_matrix_construction.image_AF.neural_network_AFs import nn_AFs
+from ilaml.affinity_matrix_construction.image_AF.neural_network_AFs import nn_AFs
 
 
 def construct_image_affinity_matrices(dataset,cache=True):
