@@ -1,8 +1,8 @@
-from goggles.inference_models.semi_supervised_models import SemiGMM,SemiBMM
+from ilaml.inference_models.semi_supervised_models import SemiGMM,SemiBMM
 import numpy as np
 from tqdm import tqdm
 import random
-from goggles.affinity_matrix_construction.construct import construct_image_affinity_matrices
+from ilaml.affinity_matrix_construction.construct import construct_image_affinity_matrices
 
 
 def infer_labels(affinity_matrix_list, dev_set_indices, dev_set_labels,seed=0,evaluate=True):
