@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.optimize import linear_sum_assignment
-from goggles.theory.theory import DevSetTheory
+from ilaml.theory.theory import DevSetTheory
 
 
 def construct_D(y_cluster,y_class):
