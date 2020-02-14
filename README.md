@@ -1,20 +1,20 @@
-# GOGGLES
+# ILAML
 
-GOGGLES is a system for automatically generating probabilistic labels for image datasets based on the affinity coding paradigm. The paper can be found at https://arxiv.org/abs/1903.04552
+ILAML is a system for improving label accuracy of automatically generated probabilistic labels for image datasets based on the affinity coding paradigm.
 
-![The affinity coding paradigm](./figures/affinity_coding.png)
+![System Architecture](./figures/sysarch.png)
 
 
 ## Installation
 
 ```bash
-git clone https://github.com/chu-data-lab/GOGGLES.git
-cd GOGGLES
+git clone https://github.com/getmyfile/ILAML.git
+cd ILAML
 pip3 install .
 ```
 
 ## Example Usage
-please refer to the tutorials in goggles/tutorials
+please refer to the tutorials in ilaml/tutorials
 ```bash
 cd goggles/tutorials/intro
 jupyter-notebook
