@@ -6,7 +6,7 @@ import setuptools
 directory = os.path.dirname(os.path.abspath(__file__))
 
 # Extract version information
-path = os.path.join(directory, 'goggles', '__init__.py')
+path = os.path.join(directory, 'ilaml', '__init__.py')
 with open(path) as read_file:
     text = read_file.read()
 pattern = re.compile(r"^__version__ = ['\"]([^'\"]*)['\"]", re.MULTILINE)
@@ -28,9 +28,9 @@ if os.path.isfile(requirementPath):
 setuptools.setup(
     name='goggles',
     version=version,
-    url='https://github.com/chu-data-lab/GOGGLES',
-    description='A system for automatically generating probabilistic labels for image datasets based on the affinity coding paradigm',
-    long_description_content_type='text/markdown',
+    url='https://github.com/getmyfile/ILAML',
+    description='A system for improving label accuracy of automatically generated probabilistic labels for image datasets based on the affinity coding paradigm',
+    long_description_content_type='text/markdow11n',
     long_description=long_description,
     license='MIT License',
     packages=setuptools.find_packages(),
@@ -46,9 +46,8 @@ setuptools.setup(
     ],
 
     project_urls={  # Optional
-        'Homepage': 'https://github.com/chu-data-lab/GOGGLES',
-        'Source': 'https://github.com/chu-data-lab/GOGGLES',
-        'Bug Reports': 'https://github.com/chu-data-lab/GOGGLES/issues',
-        'Citation': 'https://arxiv.org/abs/1903.04552',
+        'Homepage': 'https://github.com/getmyfile/ILAML',
+        'Source': 'https://github.com/getmyfile/ILAML',
+        'Bug Reports': 'https://github.com/getmyfile/ILAML/issues',
     },
 )
