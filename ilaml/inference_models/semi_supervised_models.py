@@ -1,6 +1,6 @@
 from sklearn.mixture import GaussianMixture
 from sklearn.cluster import KMeans
-from goggles.inference_models.cluster_class_mapping import solve_mapping
+from ilaml.inference_models.cluster_class_mapping import solve_mapping
 import numpy as np
 DEL = 1e-300
 
