@@ -3,7 +3,7 @@ import torch
 import torch.nn.functional as F
 from tqdm import trange
 import numpy as np
-from goggles.utils.constants import *
+from ilaml.utils.constants import *
 from .pretrained_models.vgg import Vgg16
 
 _make_cuda = lambda x: x.cuda() if torch.cuda.is_available() else x
