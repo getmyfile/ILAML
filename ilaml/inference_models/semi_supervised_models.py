@@ -127,12 +127,12 @@ class SemiBMM:
     def initalization(self,X):
         km = KMeans(n_clusters=self.K)
         y_init = km.fit_predict(X)
-        print("Before prob :: "+X.shape[0])
+        print("Before prob :: "+ str(X.shape[0]))
         prob = np.zeros(shape=(X.shape[0],self.K))
-        print("After prob :: "+X.shape[0])
+        print("After prob :: "+str(X.shape[0]))
         for i in range(X.shape[0]):
             prob[i,y_init[i]] = 1
-        print("After for :: "+X.shape[0])
+        print("After for :: "+str(X.shape[0]))
         return prob
 
 
