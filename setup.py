@@ -37,12 +37,7 @@ setuptools.setup(
     include_package_data=True,
     install_requires = install_requires,
     keywords='',
-    classifiers=[
-        'Intended Audience :: Science/Research',
-        'Topic :: Scientific/Engineering :: Bio-Informatics',
-        'Topic :: Scientific/Engineering :: Information Analysis',
-        'License :: OSI Approved :: Apache Software License',
-        'Programming Language :: Python :: 3',
+    classifiers=['',
     ],
 
     project_urls={  # Optional
