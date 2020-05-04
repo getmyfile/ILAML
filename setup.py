@@ -26,7 +26,7 @@ if os.path.isfile(requirementPath):
         install_requires = f.read().splitlines()
 
 setuptools.setup(
-    name='goggles',
+    name='ilaml',
     version=version,
     url='https://github.com/getmyfile/ILAML',
     description='',
