@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 from torchvision import transforms
 
 
-class GogglesDataset(Dataset):
+class ILAMLDataset(Dataset):
     def __init__(self,path,transform):
         valid_images = [".jpg", ".gif", ".png"]
         self._data_path = path
