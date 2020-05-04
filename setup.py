@@ -32,7 +32,7 @@ setuptools.setup(
     description='',
     long_description_content_type='text/markdow11n',
     long_description=long_description,
-    license='MIT License',
+    license='',
     packages=setuptools.find_packages(),
     include_package_data=True,
     install_requires = install_requires,
