@@ -1,9 +1,9 @@
-from ilaml import construct_image_affinity_matrices, GogglesDataset,infer_labels
+from ilaml import construct_image_affinity_matrices, ILAMLDataset,infer_labels
 import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score
 if __name__ == '__main__':
-    dataset = GogglesDataset.load_all_data("../dataset/images")
+    dataset = ILAMLDataset.load_all_data("../dataset/images")
     afs = construct_image_affinity_matrices(dataset)
     dev_set_indices, dev_set_labels = [0,1,2,90,91,92],[0,0,0,1,1,1]
     y_true = pd.read_csv("../dataset/labels.csv")
