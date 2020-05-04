@@ -2,8 +2,6 @@
 
 ILAML is a system for improving label accuracy of automatically generated probabilistic labels for image datasets based on the affinity coding paradigm.
 
-![System Architecture](./figures/sysarch.PNG)
-
 
 ## Installation
 
