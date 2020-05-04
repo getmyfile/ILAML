@@ -77,8 +77,8 @@ class ConvergenceMeter:
 
 class SemiGMM(GaussianMixture):
     """
-    Goggles Semi-supervised Guassian Mixture model adapted from scikit-learn.
-    The cluster-to-class mapping is performed based section 4.3
+    Semi-supervised Guassian Mixture model adapted from scikit-learn.
+    The cluster-to-class mapping is performed
     """
 
     def __init__(self, n_components=1, covariance_type='full', tol=1e-4, reg_covar=1e-6):
