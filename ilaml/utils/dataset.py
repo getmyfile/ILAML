@@ -6,17 +6,16 @@ from torchvision import transforms
 
 
 class ILAMLDataset(Dataset):
-    def __init__(self,*path,transform):
-        valid_images = [".jpg", ".gif", ".png"]
-        for a in path:     
-            self._data_path = a
-            self.images_filename_list = []
-            for f in os.listdir(a):
-                ext = os.path.splitext(f)[1]
-                if ext.lower() not in valid_images:
-                    continue
-                self.images_filename_list.append(f)
-            self.images_filename_list = list(sorted(self.images_filename_list))
+    def __init__(self,path,transform):
+        valid_images = [".jpg", ".gif", ".png"]    
+        self._data_path = path
+        self.images_filename_list = []
+        for f in os.listdir(path):
+            ext = os.path.splitext(f)[1]
+            if ext.lower() not in valid_images:
+                continue
+            self.images_filename_list.append(f)
+        self.images_filename_list = list(sorted(self.images_filename_list))
         
         if transform is not None:
             self._transform = transform
@@ -56,6 +55,6 @@ class ILAMLDataset(Dataset):
         transformation = transforms.Compose([
             transform_resize, transform_to_tensor, transform_normalize])
         dataset = cls(
-            *root_dir,
+            root_dir,
             transform=transformation)
         return dataset
