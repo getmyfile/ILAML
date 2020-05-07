@@ -41,7 +41,7 @@ class ILAMLDataset(Dataset):
         return len(self.images_filename_list)
 
     @classmethod
-    def load_all_data(cls, *root_dir, input_image_size=224):
+    def load_all_data(cls, root_dir, input_image_size=224):
         try:
             transform_resize = transforms.Resize(
                 (input_image_size, input_image_size))
